@@ -2,7 +2,7 @@ const std = @import("std");
 
 const lucky_dog = @import("../lucky_dog.zig");
 
-pub fn buildConfig(_: std.mem.Allocator, env_map: *std.EnvMap) !lucky_dog.App.Config {
+pub fn buildConfig(_: std.mem.Allocator, env_map: *const std.process.EnvMap) !lucky_dog.App.Config {
     return .{
         .db = .{
             .connect = .{

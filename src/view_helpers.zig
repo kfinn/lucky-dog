@@ -29,3 +29,6 @@ pub fn writeImportMap(writer: *std.Io.Writer) !void {
     try import_map.writeEntry(.init("lodash/", "https://esm.sh/lodash@4.17.21/"));
     try import_map.end();
 }
+
+pub const container_class = "bg-blue-100/70 dark:bg-blue-950/70 px-4 py-2 rounded-lg text-center";
+pub const link_class = "text-purple-700 dark:text-purple-400 hover:underline";

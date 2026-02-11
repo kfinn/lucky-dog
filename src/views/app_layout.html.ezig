@@ -20,7 +20,7 @@
     <% try view_helpers.writeImportMap(writer); %>
     <script type="module">import "application"</script>
   </head>
-  <body class="min-h-scren min-w-screen">
+  <body class="min-h-screen min-w-screen flex flex-col items-stretch justify-stretch">
     <% try props.writeBody(writer); %>
   </body>
 </html>

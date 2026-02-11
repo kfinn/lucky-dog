@@ -65,7 +65,7 @@ export default function AnimatedBackground() {
           className: classNames(
             "absolute",
             "motion-safe:animate-[spinning-appear-and-disappear_6s_linear_1]",
-            "motion-reduced:animate-[still-appear-and-disappear_6s_linear_1]",
+            "motion-reduce:animate-[still-appear-and-disappear_6s_linear_1]",
             "object-contain",
             "w-[30%]",
             "h-[30%]",
@@ -90,7 +90,7 @@ export default function AnimatedBackground() {
       "-z-1",
       "bg-conic-[red,orange,yellow,green,blue,indigo,violet,red,orange,yellow,green,blue,indigo,violet,red,orange,yellow,green,blue,indigo,violet,red,orange,yellow,green,blue,indigo,violet,red,orange,yellow,green,blue,indigo,violet,red]",
       "bg-size-[700%_700%]",
-      "motion-safe:animate-[rotating-background_20s_linear_infinite]",
+      "motion-safe:animate-[rotating-background_40s_linear_infinite]",
       "motion-reduce:bg-top-left",
     )}
   >

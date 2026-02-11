@@ -25,7 +25,7 @@ pub const App = mantle.App(.{
 pub fn init(allocator: std.mem.Allocator, env_map: *const std.process.EnvMap) !App {
     return try App.init(
         allocator,
-        comptime switch (environment_options.environment) {
+        switch (environment_options.environment) {
             .development => @import("environment/development.zig").config,
             .production => try @import("environment/production.zig").buildConfig(allocator, env_map),
         },
