@@ -5,7 +5,7 @@
     .minimum_zig_version = "0.15.1",
     .dependencies = .{
         .mantle = .{
-            .url = "../mantle",
+            .url = "git+https://codeberg.org/kfinn/mantle#1215f610c052e4c6df127343112d5d28f4b13478",
             .hash = "mantle-0.0.0-d9oPsFOWAgDVMRx4e1vshJ8Lp05ZI68h8YbaDB-fRPz9",
         },
         .ezig = .{
