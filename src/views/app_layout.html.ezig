@@ -1,0 +1,26 @@
+<% const assets = @import("assets"); %>
+<% const view_helpers = @import("app").view_helpers; %>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      <%
+        if (std.meta.hasMethod(@TypeOf(props), "writeTitle")) {
+          try props.writeTitle(writer);
+        } else {
+          try writer.writeAll("Lucky Dog");
+        }
+      %>
+    </title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="<%= assets.@"tailwind/tailwind.css" %>" />
+    <link rel="stylesheet" href="<%= assets.@"stylesheets/animations.css" %>" />
+    <% try view_helpers.writeImportMap(writer); %>
+    <script type="module">import "application"</script>
+  </head>
+  <body class="min-h-scren min-w-screen">
+    <% try props.writeBody(writer); %>
+  </body>
+</html>

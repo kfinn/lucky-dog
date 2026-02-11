@@ -21,8 +21,8 @@
             .hash = "pg-0.0.0-Wp_7gag6BgD_QAZrPhNNEGpnUZR_LEkKT40Ura3p-4yX",
         },
         .httpz = .{
-            .url = "git+https://github.com/karlseguin/http.zig#9ef2ffe8d611ff2e1081e5cf39cb4632c145c5b9",
-            .hash = "httpz-0.0.0-PNVzrIowBwAFr_kqBN1W4KBMC2Ofutasj2ZfNAIcfTzF",
+            .url = "git+https://github.com/karlseguin/http.zig#90e7fc07ef7157a4da6922571fb4daef38b48998",
+            .hash = "httpz-0.0.0-PNVzrHLABgDoVnzqKpEbx2rZIzmMclEdoEmdJDfZmxsv",
         },
     },
     .paths = .{

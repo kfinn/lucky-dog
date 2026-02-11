@@ -16,7 +16,7 @@ pub fn buildConfig(_: std.mem.Allocator, env_map: *std.EnvMap) !lucky_dog.App.Co
             },
         },
         .session = .{
-            .cookie_secret_key = env_map.get("COOKIE_SECRET_KEY"),
+            .cookie_secret_key = @ptrCast(env_map.get("COOKIE_SECRET_KEY").?),
         },
         .httpz = .{
             .port = if (env_map.get("PORT")) |env_port| try std.fmt.parseInt(u16, env_port, 10) else 5882,

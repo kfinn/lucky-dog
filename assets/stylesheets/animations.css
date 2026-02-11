@@ -1,0 +1,61 @@
+@keyframes rotating-background {
+  from {
+    background-position: left;
+  }
+
+  25% {
+    background-position: top;
+  }
+
+  50% {
+    background-position: right;
+  }
+
+  75% {
+    background-position: bottom;
+  }
+
+  to {
+    background-position: left;
+  }
+}
+
+@keyframes spinning-appear-and-disappear {
+  from {
+    opacity: 0;
+    transform: rotate(-45deg);
+  }
+
+  10% {
+    opacity: 1;
+    transform: rotate(-36deg);
+  }
+
+  90% {
+    opacity: 1;
+    transform: rotate(36deg);
+  }
+
+  to {
+    opacity: 0;
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes still-appear-and-disappear {
+  from {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
